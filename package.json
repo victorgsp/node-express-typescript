@@ -12,9 +12,7 @@
     "pre-commit": "npm run formart && npm run test && echo teste"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "npm run formart && npm run test && echo teste"
-    }
+    "pre-commit": "npm run formart && npm run test && echo teste"
   },
   "author": "",
   "license": "ISC",
