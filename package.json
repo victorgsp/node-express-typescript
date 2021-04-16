@@ -11,9 +11,6 @@
     "prepare": "husky install",
     "pre-commit": "npm run formart && npm run test && echo teste"
   },
-  "husky": {
-    "pre-commit": "npm run formart && npm run test && echo teste"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
