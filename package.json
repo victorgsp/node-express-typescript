@@ -11,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm formart && npm test && echo teste"
+      "pre-commit": "npm run formart && npm run test && echo teste"
     }
   },
   "author": "",
