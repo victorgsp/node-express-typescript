@@ -8,8 +8,7 @@
     "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
     "lint": "prettier --check .",
     "format": "prettier --write .",
-    "prepare": "husky install",
-    "pre-commit": "npm run formart && npm run test && echo teste"
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
