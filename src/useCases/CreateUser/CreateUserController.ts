@@ -7,7 +7,7 @@ export class CreateUserController {
     const { name, email, password } = request.body;
 
     try {
-      this.createUserUseCase.execute({ name, email, password });
+      await this.createUserUseCase.execute({ name, email, password });
 
       return response.status(201).send();
     } catch (error) {

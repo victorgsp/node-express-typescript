@@ -10,7 +10,7 @@ export class CreateUserUseCase {
     );
 
     if (userAlreadyExists) {
-      throw new Error("User alredy exists.");
+      throw Error("User alredy exists.");
     }
 
     const user = new User(data);
