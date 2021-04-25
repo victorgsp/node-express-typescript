@@ -2,5 +2,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run format
+yarn eslint . --fix
 #add this line do run test before git commit
 #npm test

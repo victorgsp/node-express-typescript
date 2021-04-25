@@ -1,7 +1,7 @@
-import { User } from "./../../entities/User";
-import { ICreateUserRequestDTO } from "./CreateUserRequestDTO";
-import { IUserRepository } from "./../../repositories/IUserRepository";
 import { inject, singleton } from "tsyringe";
+import { User } from "../../entities/User";
+import { ICreateUserRequestDTO } from "./CreateUserRequestDTO";
+import { IUserRepository } from "../../repositories/IUserRepository";
 
 @singleton()
 export class CreateUserUseCase {
@@ -9,7 +9,7 @@ export class CreateUserUseCase {
     @inject("UserRepository") private usersRepository: IUserRepository
   ) {}
 
-  async execute(data: ICreateUserRequestDTO) {
+  async execute(data: ICreateUserRequestDTO): Promise<void> {
     const userAlreadyExists = await this.usersRepository.findByEmail(
       data.email
     );
