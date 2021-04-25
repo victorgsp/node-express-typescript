@@ -1,6 +1,9 @@
+import { injectable } from 'tsyringe';
 import { Request, Response } from "express";
 import { CreateUserUseCase } from "./CreateUserUseCase";
+@injectable()
 export class CreateUserController {
+  
   constructor(private createUserUseCase: CreateUserUseCase) {}
 
   async handler(request: Request, response: Response): Promise<Response> {
